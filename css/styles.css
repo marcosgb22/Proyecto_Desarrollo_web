@@ -1,0 +1,107 @@
+
+body {
+    background-image: url(../img/plantilla.jpg);
+    background-color: rgb(28, 26, 27);
+    font-family: 'Oswald', sans-serif;
+    height: 100vh ;
+
+}
+
+@media (min-width: 700px) {
+    body {
+        background-image: url(../img/zyro-image-recortada.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        font-size: smaller;
+        height: 70vh;
+    }
+}
+
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.9fr 1.1fr 1fr; 
+    grid-template-rows: 0.4fr 1.7fr 0.2fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "HEADER HEADER HEADER"
+      "AREA AREA AREA"
+      "REDES REDES REDES"
+      "FOOTER FOOTER FOOTER"; 
+  }
+
+.HEADER { grid-area: HEADER; 
+            color: aliceblue;            
+}
+
+.Indices_header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 700px) {
+    .Indices_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.AREA { grid-area: AREA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0px;
+    height: 500px;
+    color: rgb(189, 197, 204);
+
+}
+
+@media (max-width: 700px) {
+    .AREA {
+        color: rgb(11, 11, 11);
+    }
+}
+
+.Contenido_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.REDES { grid-area: REDES;
+        
+ }
+
+.Indices_redes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.FOOTER { grid-area: FOOTER;
+    color: aliceblue; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+}
+
+a {
+    text-decoration :none
+   
+}
+li {
+    list-style: none;
+}
+
+a:hover,a:visited,a:link {
+    color: rgb(255, 255, 255);
+    
+  }
+
+
+
